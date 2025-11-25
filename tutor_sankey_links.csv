@@ -1,0 +1,15 @@
+source,target,value,stage_from,stage_to
+high,central to assessment,1,familiarity_level,integration_depth
+high,embedded in activities,3,familiarity_level,integration_depth
+high,limited examples,1,familiarity_level,integration_depth
+high,no integration,1,familiarity_level,integration_depth
+medium,embedded in activities,4,familiarity_level,integration_depth
+central to assessment,mixed,1,integration_depth,perception_of_learning_impact
+embedded in activities,mixed,6,integration_depth,perception_of_learning_impact
+embedded in activities,net positive,1,integration_depth,perception_of_learning_impact
+limited examples,mixed,1,integration_depth,perception_of_learning_impact
+no integration,mixed,1,integration_depth,perception_of_learning_impact
+mixed,equity or access,1,perception_of_learning_impact,primary_ethics_concern
+mixed,over reliance,3,perception_of_learning_impact,primary_ethics_concern
+mixed,plagiarism or originality,5,perception_of_learning_impact,primary_ethics_concern
+net positive,over reliance,1,perception_of_learning_impact,primary_ethics_concern

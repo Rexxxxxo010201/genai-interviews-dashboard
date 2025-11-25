@@ -1,0 +1,13 @@
+source,target,value,stage_from,stage_to
+high,heavy,2,familiarity_level,usage_frequency
+high,moderate,2,familiarity_level,usage_frequency
+medium,light,1,familiarity_level,usage_frequency
+heavy,checking answers,1,usage_frequency,primary_use_case
+heavy,groundwork and study planning,1,usage_frequency,primary_use_case
+light,scaffolding and overview for group/tutorial questions,1,usage_frequency,primary_use_case
+moderate,checking answers,1,usage_frequency,primary_use_case
+moderate,checking answers and structuring work,1,usage_frequency,primary_use_case
+checking answers,strongly positive,2,primary_use_case,perceived_impact_on_learning
+checking answers and structuring work,mixed,1,primary_use_case,perceived_impact_on_learning
+groundwork and study planning,strongly positive,1,primary_use_case,perceived_impact_on_learning
+scaffolding and overview for group/tutorial questions,mixed,1,primary_use_case,perceived_impact_on_learning

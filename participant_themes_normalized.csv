@@ -1,0 +1,115 @@
+participant_id,role,micro_theme,macro_theme
+AUT-S01,student,preference for traditional learning methods,student_engagement_motivation
+AUT-S01,student,speed and efficiency,staff_experience_professional_use
+AUT-S01,student,concerns about accuracy,accuracy_limitations_reliability
+AUT-S01,student,systematic verification of AI outputs,critical_evaluation_reflection
+AUT-S01,student,over-reliance risk in group work,accuracy_limitations_reliability
+AUT-S01,student,need for clearer AI use and plagiarism guidelines,policy_guidance_training
+AUT-S01,student,surface-level understanding versus deep learning,accuracy_limitations_reliability
+AUT-S01,student,"tool-specific policy awareness (Copilot allowed, others restricted)",policy_guidance_training
+AUT-S02,student,speed and efficiency,staff_experience_professional_use
+AUT-S02,student,mixed feelings about learning benefits,student_engagement_motivation
+AUT-S02,student,clarity of institutional policies,policy_guidance_training
+AUT-S02,student,case-by-case critical evaluation,critical_evaluation_reflection
+AUT-S02,student,desire for task-specific in-class guidance,policy_guidance_training
+SPR-S01,student,groundwork and efficiency,staff_experience_professional_use
+SPR-S01,student,clear separation between AI support and own thinking,ai_as_learning_tool
+SPR-S01,student,systematic cross-checking and handling hallucinations,critical_evaluation_reflection
+SPR-S01,student,desire for consistent and faculty-specific AI policies,policy_guidance_training
+SPR-S01,student,degree-specific strengths and weaknesses of AI,assessment_design_innovation
+SPR-S01,student,integration of AI into coursework as a comparative tool,ai_as_learning_tool
+SPR-S02,student,speed and efficiency,staff_experience_professional_use
+SPR-S02,student,use as a tool not a replacement,ai_as_learning_tool
+SPR-S02,student,concerns about accuracy,accuracy_limitations_reliability
+SPR-S02,student,systematic verification of statistics and sources,critical_evaluation_reflection
+SPR-S02,student,over-reliance risk and student laziness,accuracy_limitations_reliability
+SPR-S02,student,preference for ChatGPT over Copilot,staff_experience_professional_use
+SPR-S02,student,clear institutional guidance and appendices,policy_guidance_training
+SPR-S02,student,value of AI-integrated activities for comparison and reflection,ai_as_learning_tool
+SPR-S03,student,use of AI for summarising and clarifying complex material,ai_as_learning_tool
+SPR-S03,student,AI as a comparative tool after completing own work,ai_as_learning_tool
+SPR-S03,student,concerns about accuracy and hallucinations,accuracy_limitations_reliability
+SPR-S03,student,time-consuming but deliberate verification and cross-referencing,critical_evaluation_reflection
+SPR-S03,student,over-reliance risk and loss of independent problem solving,accuracy_limitations_reliability
+SPR-S03,student,positive impact of subject design on ethical AI use,assessment_design_innovation
+SPR-S03,student,desire for clearer guidance on acceptable extent of AI use,policy_guidance_training
+SPR-S03,student,trust in AI for learning but not for final judgment,critical_evaluation_reflection
+AUT-P01,tutor,assessment integrity,assessment_integrity_ethics
+AUT-P01,tutor,assignment redesign to limit unethical AI use,assessment_integrity_ethics
+AUT-P01,tutor,student over-reliance,accuracy_limitations_reliability
+AUT-P01,tutor,superficial AI use and inaccurate outputs,accuracy_limitations_reliability
+AUT-P01,tutor,need for staff training and practical workshops,policy_guidance_training
+AUT-P01,tutor,desire for university-provided examples and resources,policy_guidance_training
+AUT-P01,tutor,skepticism about effectiveness of student education alone,assessment_integrity_ethics
+AUT-P01,tutor,oral presentations as an authenticity check,assessment_integrity_ethics
+AUT-P02,tutor,student over-reliance,accuracy_limitations_reliability
+AUT-P02,tutor,assessment integrity,assessment_integrity_ethics
+AUT-P02,tutor,need for AI-use disclosure and transparency,policy_guidance_training
+AUT-P02,tutor,shift toward oral and process-focused assessment,assessment_integrity_ethics
+AUT-P02,tutor,lack of institutional guidelines and training,policy_guidance_training
+AUT-P02,tutor,concerns about AI accuracy and trust,accuracy_limitations_reliability
+AUT-P02,tutor,tutor collaboration and shared resources on GenAI,staff_experience_professional_use
+AUT-P02,tutor,developing students’ critical evaluation of AI outputs,critical_evaluation_reflection
+AUT-P03,tutor,assessment integrity,assessment_integrity_ethics
+AUT-P03,tutor,need for explicit AI guidelines and expectations,policy_guidance_training
+AUT-P03,tutor,student over-reliance on AI in exams,assessment_integrity_ethics
+AUT-P03,tutor,use of AI for engagement and idea generation,ai_as_learning_tool
+AUT-P03,tutor,importance of reflective reporting on AI use,critical_evaluation_reflection
+AUT-P03,tutor,insufficient institutional training and resources,policy_guidance_training
+AUT-P03,tutor,desire for staff access to paid AI tools,policy_guidance_training
+AUT-P03,tutor,designing assessments beyond simple text generation,assessment_design_innovation
+AUT-P04,tutor,assessment integrity,assessment_integrity_ethics
+AUT-P04,tutor,student over-reliance,accuracy_limitations_reliability
+AUT-P04,tutor,cautious use for feedback and ideas,ai_as_learning_tool
+AUT-P04,tutor,need for staff training on AI tools,policy_guidance_training
+AUT-P04,tutor,institutional guidelines and disclaimers,policy_guidance_training
+AUT-P04,tutor,difficulty detecting AI use at scale,assessment_integrity_ethics
+AUT-P04,tutor,positive impact on engagement when scaffolded,student_engagement_motivation
+AUT-P04,tutor,cross-institutional differences in AI policy enforcement,policy_guidance_training
+SPR-P01,tutor,institutional AI infrastructure and governance,policy_guidance_training
+SPR-P01,tutor,student over-reliance and reduced effort,accuracy_limitations_reliability
+SPR-P01,tutor,plagiarism and lack of acknowledgment,assessment_integrity_ethics
+SPR-P01,tutor,need for practical ethical guidance and workshops,policy_guidance_training
+SPR-P01,tutor,limitations and inaccuracy of AI outputs,accuracy_limitations_reliability
+SPR-P01,tutor,tutor reluctance to use AI for feedback,staff_experience_professional_use
+SPR-P01,tutor,student engagement and boredom with current ethics activities,student_engagement_motivation
+SPR-P01,tutor,professional development and staff training on GenAI,policy_guidance_training
+SPR-P02,tutor,need for clearer purpose of AI integration,policy_guidance_training
+SPR-P02,tutor,student over-reliance and non-acknowledgement,assessment_integrity_ethics
+SPR-P02,tutor,marking incentives for critical evaluation,critical_evaluation_reflection
+SPR-P02,tutor,increased engagement through AI activities,student_engagement_motivation
+SPR-P02,tutor,performance gains for motivated students,assessment_design_innovation
+SPR-P02,tutor,tutor use of AI for feedback and preparation,staff_experience_professional_use
+SPR-P02,tutor,desire for more training and lecture-level emphasis,policy_guidance_training
+SPR-P03,tutor,high tutor AI literacy and daily professional use,staff_experience_professional_use
+SPR-P03,tutor,AI-supported teaching preparation and feedback,ai_as_learning_tool
+SPR-P03,tutor,prompt quality and sensitivity as a core challenge,assessment_design_innovation
+SPR-P03,tutor,student engagement and motivation only moderate,student_engagement_motivation
+SPR-P03,tutor,mixed levels of student critical evaluation,student_engagement_motivation
+SPR-P03,tutor,fairness concerns about AI users gaining higher marks,assessment_integrity_ethics
+SPR-P03,tutor,no clear improvement in assessment performance,assessment_design_innovation
+SPR-P03,tutor,value of structured AI-comparison tasks for learning,ai_as_learning_tool
+SPR-P04,tutor,high tutor AI literacy,staff_experience_professional_use
+SPR-P04,tutor,assessment integrity,assessment_integrity_ethics
+SPR-P04,tutor,student over-reliance,accuracy_limitations_reliability
+SPR-P04,tutor,limited ethical guideline effectiveness,policy_guidance_training
+SPR-P04,tutor,"need for controlled, course-specific AI tools",policy_guidance_training
+SPR-P04,tutor,challenges verifying genuine understanding,assessment_integrity_ethics
+SPR-P04,tutor,prompt manipulation to game comparisons,assessment_integrity_ethics
+SPR-P04,tutor,importance of oral questioning to detect misuse,assessment_integrity_ethics
+SPR-P05,tutor,student over-reliance on AI outputs,accuracy_limitations_reliability
+SPR-P05,tutor,weak critical evaluation and reflection,critical_evaluation_reflection
+SPR-P05,tutor,assessment integrity and academic honesty,assessment_integrity_ethics
+SPR-P05,tutor,need for clearer guidelines and procedures,policy_guidance_training
+SPR-P05,tutor,tutor workload and time constraints,staff_experience_professional_use
+SPR-P05,tutor,insufficient staff training on ethical AI use,policy_guidance_training
+SPR-P05,tutor,call for mandatory student ethics training,assessment_integrity_ethics
+SPR-P05,tutor,uncertainty about actual learning gains,accuracy_limitations_reliability
+SPR-P06,tutor,structured reflection and evaluative judgment,critical_evaluation_reflection
+SPR-P06,tutor,student over-reliance on GenAI,accuracy_limitations_reliability
+SPR-P06,tutor,ethical declaration and AI plagiarism awareness,assessment_integrity_ethics
+SPR-P06,tutor,agentic and semi-restricted use of GenAI,staff_experience_professional_use
+SPR-P06,tutor,assessment integrity and detection of undeclared use,assessment_integrity_ethics
+SPR-P06,tutor,variation in student engagement and attitudes,student_engagement_motivation
+SPR-P06,tutor,need for formal tutor training and institutional guidelines,policy_guidance_training
+SPR-P06,tutor,refinement of GenAI declaration templates and prompts,policy_guidance_training

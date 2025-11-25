@@ -1,0 +1,16 @@
+# virtual env and local libs
+venv/
+lib/
+
+# secrets
+.env
+
+# OS / Python junk
+__pycache__/
+*.pyc
+
+# local HTML outputs
+*.html
+
+# raw Word transcripts
+*.docx
