@@ -71,7 +71,9 @@ def build_sankey_figure(links_df: pd.DataFrame, title: str):
     if links_df.empty:
         return go.Figure()
 
-    labels = pd.unique(pd.concat([links_df["source"], links_df["target"]], ignore_index=True))
+    labels = pd.unique(
+        pd.concat([links_df["source"], links_df["target"]], ignore_index=True)
+    )
     label_to_id = {label: i for i, label in enumerate(labels)}
 
     sources = links_df["source"].map(label_to_id).tolist()
@@ -82,17 +84,14 @@ def build_sankey_figure(links_df: pd.DataFrame, title: str):
         data=[
             go.Sankey(
                 node=dict(
-                    pad=20,               # more space around labels
-                    thickness=24,         # slightly thicker nodes
+                    pad=15,
+                    thickness=20,
                     label=labels.tolist(),
-                    color="gray",         # neutral node color
-                    line=dict(color="white", width=0.5)
                 ),
                 link=dict(
                     source=sources,
                     target=targets,
                     value=values,
-                    opacity=0.5           # softens overlapping links
                 ),
             )
         ]
@@ -101,16 +100,13 @@ def build_sankey_figure(links_df: pd.DataFrame, title: str):
     fig.update_layout(
         title_text=title,
         font=dict(
-            family="Arial",   # ★ Best readability
-            size=16,          # Increased size
-            color="white",    # High contrast
+            family="Arial",
+            size=14,
+            color="black"      # <<< Black text inside nodes
         ),
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        margin=dict(l=20, r=20, t=60, b=20)
     )
-
     return fig
+
 
 
 # ---------- Helpers: Themes & quotes ----------
@@ -219,7 +215,7 @@ def plot_macro_cooccurrence_heatmap(co_df: pd.DataFrame, title: str):
         return go.Figure()
 
     zmin = 0
-    zmax = co_df.values.max()
+    zmax = co_df.values.max() if co_df.values.max() > 0 else 1
 
     fig = go.Figure(
         data=go.Heatmap(
@@ -228,13 +224,10 @@ def plot_macro_cooccurrence_heatmap(co_df: pd.DataFrame, title: str):
             y=co_df.index,
             zmin=zmin,
             zmax=zmax,
-            colorscale="Viridis",     # or "Blues"
+            colorscale="Purples",  # light = low, dark = high
             colorbar=dict(
-                title="Co-occurrence",
-                titleside="right",
-                tickfont=dict(color="white"),
-                titlefont=dict(color="white"),
-            )
+                title="Co-occurrence"
+            ),
         )
     )
 
@@ -242,13 +235,9 @@ def plot_macro_cooccurrence_heatmap(co_df: pd.DataFrame, title: str):
         title=title,
         xaxis_title="Macro theme",
         yaxis_title="Macro theme",
-        font=dict(color="white"),
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        margin=dict(l=60, r=60, t=60, b=60)
     )
-
     return fig
+
 
 
 
