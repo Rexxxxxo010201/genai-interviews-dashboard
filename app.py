@@ -82,19 +82,34 @@ def build_sankey_figure(links_df: pd.DataFrame, title: str):
         data=[
             go.Sankey(
                 node=dict(
-                    pad=15,
-                    thickness=20,
+                    pad=20,               # more space around labels
+                    thickness=24,         # slightly thicker nodes
                     label=labels.tolist(),
+                    color="gray",         # neutral node color
+                    line=dict(color="white", width=0.5)
                 ),
                 link=dict(
                     source=sources,
                     target=targets,
                     value=values,
+                    opacity=0.5           # softens overlapping links
                 ),
             )
         ]
     )
-    fig.update_layout(title_text=title, font_size=12)
+
+    fig.update_layout(
+        title_text=title,
+        font=dict(
+            family="Arial",   # ★ Best readability
+            size=16,          # Increased size
+            color="white",    # High contrast
+        ),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        margin=dict(l=20, r=20, t=60, b=20)
+    )
+
     return fig
 
 
@@ -203,20 +218,38 @@ def plot_macro_cooccurrence_heatmap(co_df: pd.DataFrame, title: str):
     if co_df.empty:
         return go.Figure()
 
+    zmin = 0
+    zmax = co_df.values.max()
+
     fig = go.Figure(
         data=go.Heatmap(
             z=co_df.values,
             x=co_df.columns,
             y=co_df.index,
-            zauto=True,
+            zmin=zmin,
+            zmax=zmax,
+            colorscale="Viridis",     # or "Blues"
+            colorbar=dict(
+                title="Co-occurrence",
+                titleside="right",
+                tickfont=dict(color="white"),
+                titlefont=dict(color="white"),
+            )
         )
     )
+
     fig.update_layout(
         title=title,
         xaxis_title="Macro theme",
         yaxis_title="Macro theme",
+        font=dict(color="white"),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        margin=dict(l=60, r=60, t=60, b=60)
     )
+
     return fig
+
 
 
 def build_theme_sunburst(hierarchy: pd.DataFrame, part_themes: pd.DataFrame, role_filter: str | None = None):
